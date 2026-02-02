@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/happyBirthay27/static/css/main.b2cb3178.css",
-    "main.js": "/happyBirthay27/static/js/main.6930daab.js",
+    "main.js": "/happyBirthay27/static/js/main.52dbb28c.js",
     "static/js/885.8cd92216.chunk.js": "/happyBirthay27/static/js/885.8cd92216.chunk.js",
     "static/js/453.397254e6.chunk.js": "/happyBirthay27/static/js/453.397254e6.chunk.js",
     "static/media/leader.gif": "/happyBirthay27/static/media/leader.7c2d33126be1647ef8ee.gif",
     "static/media/leader_none.gif": "/happyBirthay27/static/media/leader_none.90abc69ca56ef5d9a7fe.gif",
     "static/media/background.mp3": "/happyBirthay27/static/media/background.96ade57d4d198992ef1e.mp3",
     "static/media/Безымянный.png": "/happyBirthay27/static/media/Безымянный.a835923905e5927a3ec5.png",
-    "static/media/Дарья_Севостьянова.png": "/happyBirthay27/static/media/Дарья_Севостьянова.9f686eb189656f400173.png",
+    "static/media/Дарья_Савостьянова.png": "/happyBirthay27/static/media/Дарья_Савостьянова.9f686eb189656f400173.png",
     "static/media/Ася_Шарова.png": "/happyBirthay27/static/media/Ася_Шарова.befaab3fb4b4f207793d.png",
     "static/media/Михаил_Билибин.png": "/happyBirthay27/static/media/Михаил_Билибин.17b94e5590b97d5d9a2f.png",
     "static/media/Дария_Которова.png": "/happyBirthay27/static/media/Дария_Которова.3232625d68b8202a2c00.png",
@@ -35,12 +35,12 @@
     "static/media/O.mp3": "/happyBirthay27/static/media/O.cd874add99758ebcad55.mp3",
     "index.html": "/happyBirthay27/index.html",
     "main.b2cb3178.css.map": "/happyBirthay27/static/css/main.b2cb3178.css.map",
-    "main.6930daab.js.map": "/happyBirthay27/static/js/main.6930daab.js.map",
+    "main.52dbb28c.js.map": "/happyBirthay27/static/js/main.52dbb28c.js.map",
     "885.8cd92216.chunk.js.map": "/happyBirthay27/static/js/885.8cd92216.chunk.js.map",
     "453.397254e6.chunk.js.map": "/happyBirthay27/static/js/453.397254e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2cb3178.css",
-    "static/js/main.6930daab.js"
+    "static/js/main.52dbb28c.js"
   ]
 }
