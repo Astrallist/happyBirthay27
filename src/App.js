@@ -325,59 +325,7 @@ function App() {
             </div>
           </div>
         ) : hasDeclined ? (
-          <div className="squid-game-container">
-            <div className="invitation-text">
-              <h2>Ты в игре, {user.firstName}</h2>
-              <div className="imgs">
-                {userImage && (
-                  <img
-                    className="game-user"
-                    src={userImage}
-                    alt={`${user.firstName} ${user.lastName}`}
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
-                <div
-                  className="game-leader"
-                  style={{
-                    backgroundImage: imageLeader
-                      ? `url(${imageLeader})`
-                      : "none",
-                  }}
-                />
-              </div>
-              <div className="event-details">
-                <h2>Детали мероприятия:</h2>
-                <p>
-                  <strong>Дата:</strong> 21 июня 2025
-                </p>
-                <p>
-                  <strong>Время:</strong> 12:00 - 18:00
-                </p>
-                <p>
-                  <strong>Место:</strong> 50й участок, СНТ Родник, Ступинский
-                  район, Московская область
-                </p>
-                <p>
-                  <strong>Дресс-код (для игры):</strong> Удобное, спортивное,
-                  дачное.
-                </p>
-                <p>
-                  <strong>Дресс-код (остальной праздник):</strong> Гаваи, можно
-                  купальник.
-                </p>
-                <p></p>
-                <p>Программа расчитана на 2-3 часа.</p>
-                <p></p>
-                <p>P.S. Что-то интересное для именнинника приветсвтуется.</p>
-              </div>
-              <button className="black-button" onClick={handleLogout}>
-                X
-              </button>
-            </div>
-          </div>
+<></>
         ) : hasDeclined ? (
           <div className="squid-game-container">
             <div className="declined-message">
