@@ -1,0 +1,206 @@
+/* Основные стили */
+.squid-game-container {
+  font-family: 'Arial Black', sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: #007f7f77;
+  padding: 2rem;
+  border: 8px solid #000;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 30px #FF00DC;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Фигуры */
+.game-symbols {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0; /* Изменил padding для правильного отображения фона */
+  background-image: url('./images/symbols.webp');
+  background-size: cover; /* Растягиваем изображение на всю область */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрещаем повторение */
+  width: 100%;
+  height: 100px; /* Минимальная высота */
+  border: 3px solid #000; /* Добавим рамку для стиля */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для объема */
+}
+
+.game-leader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0; /* Изменил padding для правильного отображения фона */
+  /*background-image: url('./images/leader.gif');*/
+  background-size: cover; /* Растягиваем изображение на всю область */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрещаем повторение */
+  width: 40%;
+  height: 170px; /* Минимальная высота */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для объема */ 
+  box-shadow: 0 0 30px #FF00DC; 
+  filter: saturate(140%);
+}
+
+.game-user{
+  display: flex;
+  border-radius: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  background-image: url('./images/background_user.webp');
+  background-size: cover; /* Растягиваем изображение на всю область */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрещаем повторение */
+  width: 40%;
+  height: 200px; /* Минимальная высота */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для объема */  
+  box-shadow: 0 0 30px #007f7f;
+  filter: saturate(180%);
+}
+
+.imgs{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.symbol-circle, 
+.symbol-triangle, 
+.symbol-square {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+
+.symbol-circle {
+  border: 8px solid #000;
+  border-radius: 50%;
+}
+
+.symbol-triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #000;
+  position: relative;
+}
+
+.symbol-triangle::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -45px;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 80px solid #c2707080;
+}
+
+.symbol-square {
+  border: 8px solid #000;
+}
+
+/* Текст */
+.invitation-title {
+  font-size: 2.2rem;
+  margin: 1.5rem 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 3px 3px 0 #000;
+  position: relative;
+}
+
+.invitation-text {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.invitation-text h2 {
+  margin-top: 0;
+  color: #ffd700;
+}
+
+/* Кнопки */
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.red-button, .black-button {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+    border: 4px solid #000000;
+}
+
+.red-button {
+  background: #0094FF;
+  color: white;
+  text-shadow: 1px 1px 1px white;
+}
+
+.black-button {
+  background: #FF0000;
+  color: white;
+  text-shadow: 1px 1px 1px white;
+}
+
+.red-button:hover {
+  background: #7dc7fc;
+  transform: scale(1.05);
+}
+
+.black-button:hover {
+  background: #ff8383;
+  transform: scale(1.05);
+}
+
+/* Анимации */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.squid-game-container {
+  animation: pulse 3s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.invitation-title {
+  animation: blink 2s infinite;
+}
+
+/* Эффект номеров как в игре */
+.squid-game-container::before {
+  content: "026";
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}

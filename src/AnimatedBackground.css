@@ -1,0 +1,71 @@
+/* ConfettiBackground.css */
+/*
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+  background-image: url('./images/background.webp');
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}*/
+
+@keyframes fall {
+  to { transform: translateY(100vh); }
+}
+
+
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+ background-image: url('./images/background.webp');
+}
+
+.confetti {
+  position: absolute;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+/* Квадрат */
+.confetti.square {
+  width: 12px;
+  height: 12px;
+}
+
+/* Круг */
+.confetti.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Треугольник */
+.confetti.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid;
+  background-color: transparent !important;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh) rotate(360deg); }
+}
