@@ -325,7 +325,8 @@ function App() {
             </div>
           </div>
         ) : hasDeclined ? (
-<></>
+          <div>
+          </div>
         ) : hasDeclined ? (
           <div className="squid-game-container">
             <div className="declined-message">
